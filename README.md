@@ -37,13 +37,7 @@ Build the ANTLR grammar as well as `src` using:
 yarn build
 ```
 
-or
-
-```
-yarn build:all
-```
-
-To only build the changes to the source code without changing the grammar use:
+To only build the changes to the `src` directory without changing the grammar use:
 
 ```
 yarn build:src
@@ -51,7 +45,7 @@ yarn build:src
 
 ### Testing
 
-Run jest to test model parsing and validation using:
+Run jest to test the model parsing and validation using:
 
 ```
 yarn test
