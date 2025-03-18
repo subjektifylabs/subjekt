@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/subjektify/website/blob/main/static/img/subjektify.png?raw=true" width="100"></p>
+<p align="center"><img src="https://github.com/subjektifylabs/website/blob/main/static/img/subjektify.png?raw=true" width="100"></p>
 
 <h1 align="center">
 Subjekt
@@ -19,20 +19,40 @@ Subjekt is a protocol-agnostic, declarative language for defining data structure
 - Java Runtime Environment (1.8.0)
 - TypeScript 2.0+
 
+### Installation
+
+Install the dependencies using:
+
+```
+yarn
+```
+
 ### Build
+
+There are two build options available within subjekt, you can either build the source code alone, or rebuild the grammar as well as the source, the default behavior is to build both.
 
 Build the ANTLR grammar as well as `src` using:
 
 ```
-npm run build:all
+yarn build
 ```
 
-- `npm run build:all`: Build the ANTLR grammar as well as `src` using `tsc`.
+or
+
+```
+yarn build:all
+```
+
+To only build the changes to the source code without changing the grammar use:
+
+```
+yarn build:src
+```
 
 ### Testing
 
 Run jest to test model parsing and validation using:
 
 ```
-npm test
+yarn test
 ```
